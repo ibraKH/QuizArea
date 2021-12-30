@@ -1,0 +1,185 @@
+@font-face {
+    font-family: ar;
+    src: url(fonts/BoutrosJazirahTextLight.ttf);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.divNav{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,0%);
+    text-align: center;
+    justify-content: center;
+}
+#main{
+    position: relative;
+    margin: 15px;
+    padding: 15px;
+    background-image: url('./main.jpg');
+    height: auto;
+    border-radius: 20px;
+}
+.hide{
+    display: none;
+}
+button{
+    background-color: white;
+    border: none;
+    color: #000;
+}
+.quizName{
+    color: black;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+@media only screen and(min-width: 481px){
+    #parent{
+        margin: 50px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+}
+.quizzes{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 50px;
+    background-color: white;
+    border-radius: 20px;
+}
+@media only screen and(max-width: 480px){
+    #parent{
+        margin: 50px;
+        display: grid;
+        grid-template-columns: auto ;
+    }
+}
+#stat{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    float: right;
+    top: 1px;
+    right: 10px;
+}
+.statImages{
+    width: 25px;
+    height: 25px;
+}
+#viewsN{
+    margin-top: -10px;
+}
+#medals{
+    position: absolute;
+    border-radius: 20px 0 0 20px;
+    background-color: white;
+    top: 20px;
+    right: -2px;
+}
+.medalsBtn{
+    font-family: ar;
+    font-size: larger;
+    color: black;
+    background-color: transparent;
+    cursor: pointer;
+}
+#achBanner{
+    font-family: ar;
+    color: white;
+    position: fixed;
+    width: 80%;
+    height: 30%;
+    background-color: white;
+    border: solid rgb(115, 24, 143);
+    top: 20%;
+    left: 10%;
+    z-index: 2;
+    border-radius: 20px;
+}
+.levels{
+    margin-left: 20px;
+    display: flex;
+    height: 19.5%;
+    width: 100%;
+}
+.level5{
+    margin-left: 18px;
+}
+.level4{
+    margin-left: 13px;
+}
+.level3{
+    margin-left: 14px;
+}
+.level2{
+    margin-left: 16px;
+}
+.level1{
+    margin-left: 22px;
+}
+.medalsPH{
+    height: 100%;
+}
+.level1M{
+    margin-left: 16.5px;
+}
+.earned{
+    justify-content: center;
+    margin: 0;
+}
+.levels h4{
+    position: absolute;
+    right: 5px;
+    color: rgb(158, 158, 158);
+}
+#closeMedals{
+    color: white;
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 30px;
+    height: 20px;
+    background-color: purple;
+    border-radius: 0 0 20px 20px;
+    cursor: pointer;
+}
+#startBtn{
+    color: white;
+    background-color: rgb(115, 24, 143);
+    border-radius: 0 0 20px 20px;
+    width: 100%;
+}
+#startBtn a{
+    font-family: ar;
+    font-size: larger;
+    color: white;
+}
+#createDiv{
+    border-radius: 0 20px 20px 0;
+    background-color: white;
+    position: absolute;
+    top: 20px;
+    left: -2px;
+}
+.btnCreate{
+    display: flex;
+    float: left;
+    margin-top: -1px;
+}
+.btnMain{
+    height: 20px;
+    display: flex;
+    float: right;
+    margin-top: -1px;
+    border-radius: 0 0 10px 10px;
+}

@@ -1,0 +1,79 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("./main.jpg");
+}
+.main{
+    top: 8%;
+    left: 20%;
+    position: absolute;
+    margin-bottom: 10%;
+}
+.container{
+    height: 30vw;
+    width: 60vw;
+    background-color: yellowgreen;
+}
+.show{
+    display: block;
+}
+.hide{
+    display: none;
+}
+.beforequiz{
+    position: absolute;
+    top: 35%;
+    left: 35%;
+}
+.title{
+    color: white;
+    justify-content: center;
+    text-align: center;
+}
+.quizName{
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+.start{
+    border: solid;
+    border-color: rgb(0, 243, 243);
+    background-color: rgb(0, 243, 243);
+}
+.quit{
+    border: solid;
+    border-color: rgb(255, 238, 0);
+    background-color: rgb(255, 238, 0);
+}
+.leave{
+    color: black;
+    text-decoration: none;
+}
+.score{
+    color: white;
+    box-shadow: 0 0 10px 2px white;
+    height: 50vh;
+    position: fixed;
+    top: 25%;
+    left: 0;
+}
+.quit{
+    bottom: 0;
+}
+.main{
+    border-radius: 10px;
+    width: 80%;
+    height: 40%;
+    top: 30%;
+    left: 10%;
+    background-color: rgba(255, 255, 255, 0.336);
+}
+.next{
+    border-radius: 10px;
+    border: white;
+    background-color: white;
+    height: 25px;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}

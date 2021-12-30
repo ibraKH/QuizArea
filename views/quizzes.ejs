@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/quizzes.css">
+    <title>Quizzes</title>
+</head>
+<body>
+    <div id="main">
+        <div class="divNav">
+            <button class="btnMain"><a href="/">Main</a></button>
+        </div>
+        <div id="createDiv">
+            <button class="btnCreate"><a href="/quiz/create">Create a quiz</a></button>
+        </div>
+        <div id="medals">
+            <button onclick="ach()" class="medalsBtn">الإنجازات</button>
+        </div>
+        <div id="achBanner" class="hide">
+            <div id="level5" class="levels level5">
+                <img src="/medals/L5.png" class="medalsPH" id="l5">
+                <h4 class="details">أكمل خمس تحديات بدون أي خسارة لكسب الجائزة</h4>
+            </div>
+            <div id="level4" class="levels level4">
+                <img src="/medals/L4.png" class="medalsPH" id="l4">
+                <h4 class="details">أكمل أربع تحديات لكسب الجائزة</h4>
+            </div>
+            <div id="level3" class="levels level3">
+                <img src="/medals/L3.png" class="medalsPH" id="l3">
+                <h4 class="details">أكمل ثلاث تحديات لكسب الجائزة</h4>
+            </div>
+            <div id="level2" class="levels level2">
+                <img src="/medals/L2.png" class="medalsPH" id="l2">
+                <h4 class="details">أكمل تحديين لكسب الجائزة</h4>
+            </div>
+            <div id="level1" class="levels level1">
+                <img src="/medals/L1.png" class="medalsPH" id="l1">
+                <h4 class="details">أكمل تحدي واحد لكسب الجائزة</h4>
+            </div>
+            <div id="closeMedals">
+                X
+            </div>
+        </div>
+    <div id="parent">
+        <% names.forEach((name) => { %>
+            <div id="<%= name.quiz_name %>" class="quizzes">
+            <h1 class="quizName"><%= name.quiz_name%></h1>
+            <h6><%= name.creator%></h6>
+            <div id="stat">
+                <div>
+                    <img id="viewsPng" class="statImages" src="/views.png">
+                    <h5 id="viewsN"><%= name.views %></h5>
+                </div>
+            </div>
+            <button id="startBtn"><a href="/quiz/<%= name.quiz_name %>">أبدا</a></button>
+            </div>
+            
+        <%  })  %>
+    </div>
+    </div>
+    
+    <script src="/js/quizzes.js"></script>
+</body>
+</html>

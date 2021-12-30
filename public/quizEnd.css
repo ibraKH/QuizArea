@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("./main.jpg");
+    overflow: hidden;
+}
+#parent{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 20%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+}
+#child{
+    width: 100%;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: solid rgb(229, 224, 230);
+}
+.hide{
+    display: none;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+.linkBtn{
+    border-radius: 20px;
+    width: 40px;
+    height: 20px;
+    border: none;
+    margin-bottom: 10px;
+}

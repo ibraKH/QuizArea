@@ -1,0 +1,54 @@
+@font-face {
+    font-family: ar;
+    src: url(fonts/BoutrosJazirahTextLight.ttf);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('./main.jpg');
+    overflow: hidden;
+}
+#createDiv{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    width: 80%;
+    height: 25%;
+    background-color: white;
+    border-radius: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#title{
+    position: relative;
+    top: 0;
+}
+h3{
+    margin-top: -40px;
+    font-family: ar;
+    font-size: larger;
+}
+#btnDiv{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+input{
+    width: 150px;
+}
+#submitBtn{
+    font-family: ar;
+    font-size: larger;
+    color: white;
+    width: 100%;
+    background-color: blueviolet;
+    border: none;
+    border-radius: 0 0 20px 20px;
+}
+

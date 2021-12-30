@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/mainstyle.css">
+    <title>QuizArea</title>
+</head>
+<body>
+    <div id="main">
+        <div id="nav">
+            <div class="center">
+                <a href="/quizzes">Quizzes</a>
+            </div>
+        </div>
+        <div id='centerE'>
+
+        
+        <div id="movingA" class="movingA">
+            <h1 style="color: white;" class="Txt" id="Txt">QUIZ<br>AREA</h1>
+            <h4 style="color: white;" class="hide" id="ibra">Made by ibra</h4>
+            <div id="orange">
+                
+            </div>
+            <div id="purple">
+
+            </div>
+        </div>
+        <div id="leftPA" class="active PR"></div>
+        <div id="leftPB" class="active PL"></div>
+        <div id="leftPC" class="active PR"></div>
+        <div id="leftPD" class="active PL"></div>
+    </div>
+    </div>
+    <script>
+        let start = setInterval(startFUNC, 2000);
+        function startFUNC(){
+            let light = document.getElementById('orange');
+            let purple = document.getElementById("purple");
+            let text = document.getElementById('ibra');
+            light.classList.add('activeL');
+            purple.classList.add('activeP');
+            text.classList.add('show')
+        }
+    </script>
+</body>
+</html>

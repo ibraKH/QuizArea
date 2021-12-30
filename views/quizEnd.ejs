@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/quizEnd.css">
+    <title>Quiz</title>
+</head>
+<body>
+    <div id="parent">
+        <div id="child">
+        <% let length =  result.length %>
+        <% let sc = parseInt(score) %>
+        <input style="display: none;" id="scoreVAR" value="<%= sc %>">
+        <h1><%= result[0].quiz_name %></h1>
+        <h1><%= sc %>/<%= length %></h1>
+        <button class="linkBtn"><a href="/quizzes">Play</a></button>
+        <button class="linkBtn"><a href="/">Main</a></button>
+        </div>
+    </div>
+    <script></script>
+</body>
+</html>

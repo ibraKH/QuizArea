@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/quizstyle.css">
+    <title>Quiz</title>
+</head>
+<body>
+    <div>
+            
+            <% let sc = parseInt(score) %> 
+            <% let o = parseInt(order) %> 
+            <% let a = result[o].A %> 
+            <% let b = result[o].B %> 
+            <% let c = result[o].C %> 
+            <% let d = result[o].D %> 
+            <% let length =  result.length %>
+            <% if(o < length-1 ){ %> 
+        <div class="main">
+            <h3 style="position: absolute; right: 10px;">Score : <%= sc %></h3>
+            <h1 style="text-align: center;"><%= result[o].quiz_name %></h1>
+            <h2 style="text-align: center;"><%= result[o].question %>?</h2>
+            <form action="/quiz/<%= result[0].quiz_name %>/<%= o = o + 1 %>/<%= sc %> "  method="POST">
+        <ul style="list-style-type: none;">
+            <li style="font-size: larger; margin-bottom: 5px;">
+                <input type="radio" id="A" value="a" name="q">
+                <label for="A"><%= a %></label>
+            </li>
+            <li style="font-size: larger; margin-bottom: 5px;">
+                <input type="radio" id="B" value="b" name="q">
+                <label for="B"><%= b %></label>
+            </li>
+            <li style="font-size: larger; margin-bottom: 5px;">
+                <input type="radio" id="C" value="c" name="q">
+                <label for="C"><%= c %></label>
+            </li>
+            <li style="font-size: larger; margin-bottom: 5px;">
+                <input type="radio" id="D" value="d" name="q">
+                <label for="D"><%= d %></label>
+            </li>
+        </ul>
+            <button type="submit" class="next">Next</button>
+            </form>
+        </div> 
+             <% } else { %> 
+                <div class="main">
+                    <h3 style="position: absolute; right: 10px;">Score : <%= sc %></h3>
+                    <h1 style="text-align: center;"><%= result[o].quiz_name %></h1>
+                    <h2 style="text-align: center;"><%= result[o].question %>?</h2>
+                    <form action="/quiz/<%= result[o].quiz_name %>/<%= o = o + 1 %>/<%= sc %>/end" method="POST">
+                <ul style="list-style-type: none;">
+                    <li style="font-size: larger; margin-bottom: 5px;">
+                        <input type="radio" id="Aa" value="a" name="q">
+                        <label for="Aa"><%= a %></label>
+                    </li>
+                    <li style="font-size: larger; margin-bottom: 5px;">
+                        <input type="radio" id="Bb" value="b" name="q">
+                        <label for="Bb"><%= b %></label>
+                    </li>
+                    <li style="font-size: larger; margin-bottom: 5px;">
+                        <input type="radio" id="Cc" value="c" name="q">
+                        <label for="Cc"><%= c %></label>
+                    </li>
+                    <li style="font-size: larger; margin-bottom: 5px;">
+                        <input type="radio" id="Dd" value="d" name="q">
+                        <label for="Dd"><%= d %></label>
+                    </li>
+                </ul>
+                    <button type="submit" class="next" id="finishBtn">Finish</button>
+                    <input value="<%= result[0].quiz_name %>" id="quizNameInput" class="hide">
+                    </form>
+                </div> 
+            <% } %> 
+    </div>
+    <script src="/js/quiz.js"></script>
+</body>
+</html>

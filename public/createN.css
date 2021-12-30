@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('./main.jpg');
+}
+#parent{
+    overflow: hidden;
+    display: absolute;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    width: 80%;
+    background-color: white;
+    border-radius: 20px;
+    left: 10%;
+    top: 5%;
+}
+.line{
+    font-size: larger;
+    color: purple;
+}

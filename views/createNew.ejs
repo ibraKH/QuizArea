@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/createN.css">
+    <title>Create new</title>
+</head>
+<body>
+    <div id="parent">
+        <% if(message){ %>
+            <h4><%= message %></h4>
+        <% } %>
+        <form action="/create/done" method="POST">
+        <div id="main">
+            <div>
+                <h3>أكتب أسمك</h3>
+                <input required name="creator" placeholder="الأسم">
+                <h3>أكتب اسم الكويز</h3>
+                <input required name="name" placeholder="أسم الكويز">
+                <input name="quizInputs" value="<%= quiz %>" style="display: none;">
+            </div>
+        </div>
+        <% let q = 0 %> 
+        <% for(let i = 0; i < quiz; i++ ){ %>
+            <div id="question">
+                <h1>Q<%= i + 1 %> </h1>
+            <input required name="Q<%= q + 1 %>" placeholder="السؤال">
+            <div>
+            <input required name="A<%= q + 1 %>" placeholder="A">
+            <input required name="B<%= q + 1 %>" placeholder="B">
+            </div>
+            <div>
+            <input required name="C<%= q + 1 %>" placeholder="C">
+            <input required name="D<%= q + 1 %>" placeholder="D">
+            </div>
+            <div>
+                <h2>: الأجابة الصحيحة</h2>
+            <select name="correct<%= q + 1 %>">
+                <option value="a">A</option>
+                <option value="b">B</option>
+                <option value="c">C</option>
+                <option value="d">D</option>
+            </select>
+            <p class="line">________</p>
+        </div>
+            </div>
+        <% } %> 
+        <div>
+            <button style="margin-top: 20px;" type="submit">إرسال</button>
+        </div>
+    </form>
+    </div>
+</body>
+</html>

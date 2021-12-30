@@ -1,0 +1,328 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('./main.jpg');
+    background-repeat: no-repeat;
+    background: cover;
+    overflow: hidden;
+}
+@media only screen and (min-width: 600px){
+    #main{
+        margin: 15px;
+        height: 96.8vh;
+        border-radius: 20px;
+    }
+    #nav{
+        height: 5%;
+        width: 100%;
+        box-shadow: 0 0 0 0;
+        color: white;
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    .left{
+        position: absolute;
+        left: 1%;
+        font-size: larger;
+    }
+    .right{
+        position: absolute;
+        right: 1%;
+        margin-top: 20px;
+        text-decoration: none;
+    }
+    .hide{
+        display: none;
+    }
+    .show{
+        display: block;
+        transition: transform 1s ease, top 1s ease;
+    }
+    .center{
+        margin-top: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    #centerE{
+        justify-content: center;
+        align-items: center;
+    }
+    #movingA{
+        position: absolute;
+        left: 41%;
+        top: 30%;
+        width: 20%;
+        height: 30%;
+        border: solid white;
+        border-width: 8px;
+    }
+    button{
+        margin-left: 5px;
+        background-color: #181818;
+        border-radius: 50%;
+        border: none;
+        height: 15px;
+        width: 10px;
+    }
+    #select{
+        position: absolute;
+        width: 13%;
+        bottom: 2%;
+        left: 43.5%;
+    }
+    #welcome{
+        top: 25%;
+        position: absolute;
+        left: 10%;
+        width: 10%;
+        color: white;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    a:active{
+        transform: scale(0.98);
+        color: rgb(144, 100, 214);
+    }
+    #Txt{
+        text-align: center;
+        color: white;
+        font-size: 50px;
+        font-family: Apple Chancery, cursive;
+        z-index: 2;
+    }
+    #orange{
+        top: 35%;
+        height: 35%;
+        border-radius: 40%;
+        position: absolute;
+        width: 100%;
+        background-color: rgba(64, 224, 208, 0.74);
+        z-index: -1;
+    }
+    #purple{
+        top: 35%;
+        height: 35%;
+        border-radius: 40%;
+        position: absolute;
+        width: 100%;
+        background-color: rgba(128, 0, 128, 0.74);
+        z-index: -1;
+    }
+    #leftPA{
+        top: 22.5%;
+        left: 61.5%;
+        position: absolute;
+        width: 8px;
+        height: 150px;
+        background-color: rgb(64, 224, 208);
+        transition: all 1s;
+    }
+    #leftPB{
+        top: 53%;
+        left: 61.5%;
+        position: absolute;
+        width: 8px;
+        height: 150px;
+        background-color: rgb(128, 0, 128);
+    }
+    #leftPC{
+        top: 53%;
+        left: 41%;
+        position: absolute;
+        width: 8px;
+        height: 150px;
+        background-color: rgb(64, 224, 208);
+        transition: transform 1s ease, top 1s ease;
+    }#leftPD{
+        top: 22.5%;
+        left: 41%;
+        position: absolute;
+        width: 8px;
+        height: 150px;
+        background-color: rgb(128, 0, 128);
+    }
+    div.active.PL{
+        transform: rotate(-45deg);
+    }
+    div.active.PR{
+        transform: rotate(45deg);
+    }
+    .activeL{
+        transform: rotate(15deg);
+        transition: transform 1s ease, top 1s ease;
+    }
+    .activeP{
+        transform: rotate(-15deg);
+        transition: transform 1s ease, top 1s ease;
+    }
+    #ibra{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 600px){
+
+    #main{
+        margin: 15px;
+        height: 96.8vh;
+        border-radius: 20px;
+
+    }
+    #nav{
+        height: 5%;
+        width: 100%;
+        box-shadow: 0 0 0 0;
+        color: white;
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    .left{
+        position: absolute;
+        left: 1%;
+        font-size: larger;
+    }
+    .right{
+        position: absolute;
+        right: 1%;
+        margin-top: 20px;
+        text-decoration: none;
+    }
+    .hide{
+        display: none;
+    }
+    .show{
+        display: block;
+        transition: transform 1s ease, top 1s ease;
+    }
+    .center{
+        margin-top: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    #centerE{
+        justify-content: center;
+        align-items: center;
+    }
+    #movingA{
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        left: 26%;
+        top: 30%;
+        width: 45%;
+        height: 35%;
+        border: solid white;
+        border-width: 8px;
+    }
+    button{
+        margin-left: 5px;
+        background-color: #181818;
+        border-radius: 50%;
+        border: none;
+        height: 15px;
+        width: 10px;
+    }
+    #select{
+        position: absolute;
+        width: 13%;
+        bottom: 2%;
+        left: 43.5%;
+    }
+    #welcome{
+        top: 25%;
+        position: absolute;
+        left: 10%;
+        width: 10%;
+        color: white;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    a:active{
+        transform: scale(0.98);
+        color: rgb(144, 100, 214);
+    }
+    #Txt{
+        text-align: center;
+        color: white;
+        font-size: 50px;
+        font-family: Apple Chancery, cursive;
+        z-index: 2;
+    }
+    #orange{
+        top: 35%;
+        height: 35%;
+        border-radius: 40%;
+        position: absolute;
+        width: 100%;
+        background-color: rgba(64, 224, 208, 0.74);
+        z-index: -1;
+    }
+    #purple{
+        top: 35%;
+        height: 35%;
+        border-radius: 40%;
+        position: absolute;
+        width: 100%;
+        background-color: rgba(128, 0, 128, 0.74);
+        z-index: -1;
+    }
+    #leftPA{
+        top: 24%;
+        left: 72%;
+        position: absolute;
+        width: 8px;
+        height: 100px;
+        background-color: rgb(64, 224, 208);
+        transition: all 1s;
+    }
+    #leftPB{
+        top: 59%;
+        left: 72%;
+        position: absolute;
+        width: 8px;
+        height: 100px;
+        background-color: rgb(128, 0, 128);
+    }
+    #leftPC{
+        top: 59%;
+        left: 26.5%;
+        position: absolute;
+        width: 8px;
+        height: 100px;
+        background-color: rgb(64, 224, 208);
+        transition: transform 1s ease, top 1s ease;
+    }#leftPD{
+        top: 24%;
+        left: 27%;
+        position: absolute;
+        width: 8px;
+        height: 100px;
+        background-color: rgb(128, 0, 128);
+    }
+    div.active.PL{
+        transform: rotate(-45deg);
+    }
+    div.active.PR{
+        transform: rotate(45deg);
+    }
+    .activeL{
+        transform: rotate(15deg);
+        transition: transform 1s ease, top 1s ease;
+    }
+    .activeP{
+        transform: rotate(-15deg);
+        transition: transform 1s ease, top 1s ease;
+    }
+    #ibra{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }    
+}
